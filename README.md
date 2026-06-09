@@ -32,7 +32,6 @@
 │       └── env.py             #   环境包装器 (80x80 裁剪 + RunningMeanStd 归一化)
 │
 ├── scripts/
-│   ├── convert_a3c.py         # A3C 权重下载 → .pth 转换 → ONNX 导出
 │   ├── eval_a3c.py            # A3C 多关卡评估
 │   ├── eval_checkpoint.py     # DDQN checkpoint 评估
 │   ├── analyze.py             # 单实验训练曲线分析
