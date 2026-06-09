@@ -12,7 +12,7 @@ from __future__ import annotations
 
 import argparse
 
-from mario_rl.ppo_trainer import train_ppo
+from mario_rl.ppo.trainer import train_ppo
 from mario_rl.utils import resolve_device
 
 

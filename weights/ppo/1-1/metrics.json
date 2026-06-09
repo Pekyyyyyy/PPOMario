@@ -1,0 +1,2016 @@
+{
+  "training": [
+    {
+      "episode": 1,
+      "steps": 180,
+      "episode_steps": 180,
+      "total_reward": 56.3,
+      "x_pos": 705,
+      "flag_get": 0,
+      "mva": 56.3
+    },
+    {
+      "episode": 2,
+      "steps": 222,
+      "episode_steps": 42,
+      "total_reward": 19.9,
+      "x_pos": 309,
+      "flag_get": 0,
+      "mva": 38.1
+    },
+    {
+      "episode": 3,
+      "steps": 625,
+      "episode_steps": 403,
+      "total_reward": 72.1,
+      "x_pos": 898,
+      "flag_get": 0,
+      "mva": 49.4
+    },
+    {
+      "episode": 4,
+      "steps": 858,
+      "episode_steps": 233,
+      "total_reward": 55.9,
+      "x_pos": 702,
+      "flag_get": 0,
+      "mva": 51.0
+    },
+    {
+      "episode": 5,
+      "steps": 904,
+      "episode_steps": 46,
+      "total_reward": 17.9,
+      "x_pos": 294,
+      "flag_get": 0,
+      "mva": 44.4
+    },
+    {
+      "episode": 6,
+      "steps": 946,
+      "episode_steps": 42,
+      "total_reward": 17.5,
+      "x_pos": 290,
+      "flag_get": 0,
+      "mva": 39.9
+    },
+    {
+      "episode": 7,
+      "steps": 1059,
+      "episode_steps": 113,
+      "total_reward": 54.8,
+      "x_pos": 674,
+      "flag_get": 0,
+      "mva": 42.0
+    },
+    {
+      "episode": 8,
+      "steps": 1316,
+      "episode_steps": 257,
+      "total_reward": 127.7,
+      "x_pos": 1431,
+      "flag_get": 0,
+      "mva": 52.8
+    },
+    {
+      "episode": 9,
+      "steps": 1357,
+      "episode_steps": 41,
+      "total_reward": 18.8,
+      "x_pos": 303,
+      "flag_get": 0,
+      "mva": 49.0
+    },
+    {
+      "episode": 10,
+      "steps": 1885,
+      "episode_steps": 528,
+      "total_reward": 92.5,
+      "x_pos": 1125,
+      "flag_get": 0,
+      "mva": 53.3
+    },
+    {
+      "episode": 11,
+      "steps": 2097,
+      "episode_steps": 212,
+      "total_reward": 70.0,
+      "x_pos": 837,
+      "flag_get": 0,
+      "mva": 54.8
+    },
+    {
+      "episode": 12,
+      "steps": 3325,
+      "episode_steps": 1228,
+      "total_reward": 50.5,
+      "x_pos": 854,
+      "flag_get": 0,
+      "mva": 54.5
+    },
+    {
+      "episode": 13,
+      "steps": 3478,
+      "episode_steps": 153,
+      "total_reward": 76.8,
+      "x_pos": 898,
+      "flag_get": 0,
+      "mva": 56.2
+    },
+    {
+      "episode": 14,
+      "steps": 4095,
+      "episode_steps": 617,
+      "total_reward": 91.4,
+      "x_pos": 1125,
+      "flag_get": 0,
+      "mva": 58.7
+    },
+    {
+      "episode": 15,
+      "steps": 4195,
+      "episode_steps": 100,
+      "total_reward": 57.1,
+      "x_pos": 696,
+      "flag_get": 0,
+      "mva": 58.6
+    },
+    {
+      "episode": 16,
+      "steps": 4236,
+      "episode_steps": 41,
+      "total_reward": 19.6,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 56.2
+    },
+    {
+      "episode": 17,
+      "steps": 4269,
+      "episode_steps": 33,
+      "total_reward": 20.2,
+      "x_pos": 309,
+      "flag_get": 0,
+      "mva": 54.0
+    },
+    {
+      "episode": 18,
+      "steps": 4326,
+      "episode_steps": 57,
+      "total_reward": 16.4,
+      "x_pos": 276,
+      "flag_get": 0,
+      "mva": 52.0
+    },
+    {
+      "episode": 19,
+      "steps": 5019,
+      "episode_steps": 693,
+      "total_reward": 54.0,
+      "x_pos": 774,
+      "flag_get": 0,
+      "mva": 52.1
+    },
+    {
+      "episode": 20,
+      "steps": 5308,
+      "episode_steps": 289,
+      "total_reward": 97.6,
+      "x_pos": 1126,
+      "flag_get": 0,
+      "mva": 54.3
+    },
+    {
+      "episode": 21,
+      "steps": 5568,
+      "episode_steps": 260,
+      "total_reward": 69.1,
+      "x_pos": 840,
+      "flag_get": 0,
+      "mva": 55.0
+    },
+    {
+      "episode": 22,
+      "steps": 5614,
+      "episode_steps": 46,
+      "total_reward": 18.1,
+      "x_pos": 292,
+      "flag_get": 0,
+      "mva": 54.9
+    },
+    {
+      "episode": 23,
+      "steps": 5709,
+      "episode_steps": 95,
+      "total_reward": 58.2,
+      "x_pos": 703,
+      "flag_get": 0,
+      "mva": 54.2
+    },
+    {
+      "episode": 24,
+      "steps": 5885,
+      "episode_steps": 176,
+      "total_reward": 76.6,
+      "x_pos": 898,
+      "flag_get": 0,
+      "mva": 55.2
+    },
+    {
+      "episode": 25,
+      "steps": 5917,
+      "episode_steps": 32,
+      "total_reward": 20.2,
+      "x_pos": 316,
+      "flag_get": 0,
+      "mva": 55.3
+    },
+    {
+      "episode": 26,
+      "steps": 5951,
+      "episode_steps": 34,
+      "total_reward": 20.4,
+      "x_pos": 313,
+      "flag_get": 0,
+      "mva": 55.5
+    },
+    {
+      "episode": 27,
+      "steps": 6064,
+      "episode_steps": 113,
+      "total_reward": 53.6,
+      "x_pos": 665,
+      "flag_get": 0,
+      "mva": 55.4
+    },
+    {
+      "episode": 28,
+      "steps": 6385,
+      "episode_steps": 321,
+      "total_reward": 97.0,
+      "x_pos": 1133,
+      "flag_get": 0,
+      "mva": 53.9
+    },
+    {
+      "episode": 29,
+      "steps": 6417,
+      "episode_steps": 32,
+      "total_reward": 19.5,
+      "x_pos": 303,
+      "flag_get": 0,
+      "mva": 53.9
+    },
+    {
+      "episode": 30,
+      "steps": 6569,
+      "episode_steps": 152,
+      "total_reward": 59.0,
+      "x_pos": 722,
+      "flag_get": 0,
+      "mva": 52.2
+    },
+    {
+      "episode": 31,
+      "steps": 6599,
+      "episode_steps": 30,
+      "total_reward": 20.0,
+      "x_pos": 309,
+      "flag_get": 0,
+      "mva": 49.8
+    },
+    {
+      "episode": 32,
+      "steps": 6703,
+      "episode_steps": 104,
+      "total_reward": 53.7,
+      "x_pos": 664,
+      "flag_get": 0,
+      "mva": 49.9
+    },
+    {
+      "episode": 33,
+      "steps": 6806,
+      "episode_steps": 103,
+      "total_reward": 55.5,
+      "x_pos": 682,
+      "flag_get": 0,
+      "mva": 48.8
+    },
+    {
+      "episode": 34,
+      "steps": 6836,
+      "episode_steps": 30,
+      "total_reward": 20.3,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 45.3
+    },
+    {
+      "episode": 35,
+      "steps": 7097,
+      "episode_steps": 261,
+      "total_reward": 74.4,
+      "x_pos": 898,
+      "flag_get": 0,
+      "mva": 46.2
+    },
+    {
+      "episode": 36,
+      "steps": 7305,
+      "episode_steps": 208,
+      "total_reward": 152.9,
+      "x_pos": 1671,
+      "flag_get": 0,
+      "mva": 52.8
+    },
+    {
+      "episode": 37,
+      "steps": 7525,
+      "episode_steps": 220,
+      "total_reward": 97.9,
+      "x_pos": 1128,
+      "flag_get": 0,
+      "mva": 56.7
+    },
+    {
+      "episode": 38,
+      "steps": 7665,
+      "episode_steps": 140,
+      "total_reward": 53.9,
+      "x_pos": 673,
+      "flag_get": 0,
+      "mva": 58.6
+    },
+    {
+      "episode": 39,
+      "steps": 7923,
+      "episode_steps": 258,
+      "total_reward": 108.7,
+      "x_pos": 1241,
+      "flag_get": 0,
+      "mva": 61.3
+    },
+    {
+      "episode": 40,
+      "steps": 8141,
+      "episode_steps": 218,
+      "total_reward": 99.8,
+      "x_pos": 1129,
+      "flag_get": 0,
+      "mva": 61.4
+    },
+    {
+      "episode": 41,
+      "steps": 8458,
+      "episode_steps": 317,
+      "total_reward": 128.0,
+      "x_pos": 1438,
+      "flag_get": 0,
+      "mva": 64.4
+    },
+    {
+      "episode": 42,
+      "steps": 8722,
+      "episode_steps": 264,
+      "total_reward": 166.5,
+      "x_pos": 1793,
+      "flag_get": 0,
+      "mva": 71.8
+    },
+    {
+      "episode": 43,
+      "steps": 8883,
+      "episode_steps": 161,
+      "total_reward": 66.5,
+      "x_pos": 796,
+      "flag_get": 0,
+      "mva": 72.2
+    },
+    {
+      "episode": 44,
+      "steps": 8999,
+      "episode_steps": 116,
+      "total_reward": 55.1,
+      "x_pos": 677,
+      "flag_get": 0,
+      "mva": 71.1
+    },
+    {
+      "episode": 45,
+      "steps": 9212,
+      "episode_steps": 213,
+      "total_reward": 98.9,
+      "x_pos": 1123,
+      "flag_get": 0,
+      "mva": 75.1
+    },
+    {
+      "episode": 46,
+      "steps": 9251,
+      "episode_steps": 39,
+      "total_reward": 19.3,
+      "x_pos": 307,
+      "flag_get": 0,
+      "mva": 75.0
+    },
+    {
+      "episode": 47,
+      "steps": 9512,
+      "episode_steps": 261,
+      "total_reward": 98.7,
+      "x_pos": 1137,
+      "flag_get": 0,
+      "mva": 77.3
+    },
+    {
+      "episode": 48,
+      "steps": 9548,
+      "episode_steps": 36,
+      "total_reward": 19.8,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 73.4
+    },
+    {
+      "episode": 49,
+      "steps": 9584,
+      "episode_steps": 36,
+      "total_reward": 19.1,
+      "x_pos": 305,
+      "flag_get": 0,
+      "mva": 73.4
+    },
+    {
+      "episode": 50,
+      "steps": 9886,
+      "episode_steps": 302,
+      "total_reward": 97.3,
+      "x_pos": 1124,
+      "flag_get": 0,
+      "mva": 75.3
+    },
+    {
+      "episode": 51,
+      "steps": 10086,
+      "episode_steps": 200,
+      "total_reward": 128.9,
+      "x_pos": 1431,
+      "flag_get": 0,
+      "mva": 80.7
+    },
+    {
+      "episode": 52,
+      "steps": 10173,
+      "episode_steps": 87,
+      "total_reward": 57.6,
+      "x_pos": 696,
+      "flag_get": 0,
+      "mva": 80.9
+    },
+    {
+      "episode": 53,
+      "steps": 10217,
+      "episode_steps": 44,
+      "total_reward": 17.9,
+      "x_pos": 294,
+      "flag_get": 0,
+      "mva": 79.1
+    },
+    {
+      "episode": 54,
+      "steps": 10403,
+      "episode_steps": 186,
+      "total_reward": 67.9,
+      "x_pos": 809,
+      "flag_get": 0,
+      "mva": 81.4
+    },
+    {
+      "episode": 55,
+      "steps": 10595,
+      "episode_steps": 192,
+      "total_reward": 68.1,
+      "x_pos": 818,
+      "flag_get": 0,
+      "mva": 81.1
+    },
+    {
+      "episode": 56,
+      "steps": 10688,
+      "episode_steps": 93,
+      "total_reward": 58.0,
+      "x_pos": 697,
+      "flag_get": 0,
+      "mva": 76.4
+    },
+    {
+      "episode": 57,
+      "steps": 10728,
+      "episode_steps": 40,
+      "total_reward": 19.8,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 72.5
+    },
+    {
+      "episode": 58,
+      "steps": 11068,
+      "episode_steps": 340,
+      "total_reward": 124.3,
+      "x_pos": 1408,
+      "flag_get": 0,
+      "mva": 76.0
+    },
+    {
+      "episode": 59,
+      "steps": 11270,
+      "episode_steps": 202,
+      "total_reward": 110.0,
+      "x_pos": 1237,
+      "flag_get": 0,
+      "mva": 76.0
+    },
+    {
+      "episode": 60,
+      "steps": 11313,
+      "episode_steps": 43,
+      "total_reward": 18.1,
+      "x_pos": 290,
+      "flag_get": 0,
+      "mva": 72.0
+    },
+    {
+      "episode": 61,
+      "steps": 11573,
+      "episode_steps": 260,
+      "total_reward": 74.7,
+      "x_pos": 898,
+      "flag_get": 0,
+      "mva": 69.3
+    },
+    {
+      "episode": 62,
+      "steps": 11882,
+      "episode_steps": 309,
+      "total_reward": 186.4,
+      "x_pos": 2021,
+      "flag_get": 0,
+      "mva": 70.3
+    },
+    {
+      "episode": 63,
+      "steps": 12177,
+      "episode_steps": 295,
+      "total_reward": 97.2,
+      "x_pos": 1126,
+      "flag_get": 0,
+      "mva": 71.8
+    },
+    {
+      "episode": 64,
+      "steps": 12336,
+      "episode_steps": 159,
+      "total_reward": 70.4,
+      "x_pos": 831,
+      "flag_get": 0,
+      "mva": 72.6
+    },
+    {
+      "episode": 65,
+      "steps": 12436,
+      "episode_steps": 100,
+      "total_reward": 57.5,
+      "x_pos": 703,
+      "flag_get": 0,
+      "mva": 70.5
+    },
+    {
+      "episode": 66,
+      "steps": 12667,
+      "episode_steps": 231,
+      "total_reward": 98.7,
+      "x_pos": 1137,
+      "flag_get": 0,
+      "mva": 74.5
+    },
+    {
+      "episode": 67,
+      "steps": 12980,
+      "episode_steps": 313,
+      "total_reward": 181.2,
+      "x_pos": 1968,
+      "flag_get": 0,
+      "mva": 78.6
+    },
+    {
+      "episode": 68,
+      "steps": 13094,
+      "episode_steps": 114,
+      "total_reward": 56.4,
+      "x_pos": 693,
+      "flag_get": 0,
+      "mva": 80.5
+    },
+    {
+      "episode": 69,
+      "steps": 13240,
+      "episode_steps": 146,
+      "total_reward": 130.0,
+      "x_pos": 1429,
+      "flag_get": 0,
+      "mva": 86.0
+    },
+    {
+      "episode": 70,
+      "steps": 13283,
+      "episode_steps": 43,
+      "total_reward": 17.5,
+      "x_pos": 285,
+      "flag_get": 0,
+      "mva": 82.0
+    },
+    {
+      "episode": 71,
+      "steps": 13318,
+      "episode_steps": 35,
+      "total_reward": 19.7,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 76.6
+    },
+    {
+      "episode": 72,
+      "steps": 13402,
+      "episode_steps": 84,
+      "total_reward": 60.3,
+      "x_pos": 721,
+      "flag_get": 0,
+      "mva": 76.7
+    },
+    {
+      "episode": 73,
+      "steps": 13559,
+      "episode_steps": 157,
+      "total_reward": 128.7,
+      "x_pos": 1416,
+      "flag_get": 0,
+      "mva": 82.2
+    },
+    {
+      "episode": 74,
+      "steps": 13696,
+      "episode_steps": 137,
+      "total_reward": 71.6,
+      "x_pos": 843,
+      "flag_get": 0,
+      "mva": 82.4
+    },
+    {
+      "episode": 75,
+      "steps": 13734,
+      "episode_steps": 38,
+      "total_reward": 19.5,
+      "x_pos": 304,
+      "flag_get": 0,
+      "mva": 80.0
+    },
+    {
+      "episode": 76,
+      "steps": 13943,
+      "episode_steps": 209,
+      "total_reward": 127.3,
+      "x_pos": 1408,
+      "flag_get": 0,
+      "mva": 83.5
+    },
+    {
+      "episode": 77,
+      "steps": 14113,
+      "episode_steps": 170,
+      "total_reward": 129.4,
+      "x_pos": 1433,
+      "flag_get": 0,
+      "mva": 88.9
+    },
+    {
+      "episode": 78,
+      "steps": 14142,
+      "episode_steps": 29,
+      "total_reward": 20.2,
+      "x_pos": 314,
+      "flag_get": 0,
+      "mva": 83.7
+    },
+    {
+      "episode": 79,
+      "steps": 14173,
+      "episode_steps": 31,
+      "total_reward": 19.7,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 79.2
+    },
+    {
+      "episode": 80,
+      "steps": 14208,
+      "episode_steps": 35,
+      "total_reward": 20.2,
+      "x_pos": 310,
+      "flag_get": 0,
+      "mva": 79.3
+    },
+    {
+      "episode": 81,
+      "steps": 14239,
+      "episode_steps": 31,
+      "total_reward": 20.1,
+      "x_pos": 310,
+      "flag_get": 0,
+      "mva": 76.6
+    },
+    {
+      "episode": 82,
+      "steps": 14309,
+      "episode_steps": 70,
+      "total_reward": 55.9,
+      "x_pos": 680,
+      "flag_get": 0,
+      "mva": 70.1
+    },
+    {
+      "episode": 83,
+      "steps": 14511,
+      "episode_steps": 202,
+      "total_reward": 127.9,
+      "x_pos": 1417,
+      "flag_get": 0,
+      "mva": 71.6
+    },
+    {
+      "episode": 84,
+      "steps": 14544,
+      "episode_steps": 33,
+      "total_reward": 18.5,
+      "x_pos": 298,
+      "flag_get": 0,
+      "mva": 69.0
+    },
+    {
+      "episode": 85,
+      "steps": 14573,
+      "episode_steps": 29,
+      "total_reward": 20.0,
+      "x_pos": 308,
+      "flag_get": 0,
+      "mva": 67.1
+    },
+    {
+      "episode": 86,
+      "steps": 14645,
+      "episode_steps": 72,
+      "total_reward": 56.1,
+      "x_pos": 680,
+      "flag_get": 0,
+      "mva": 65.0
+    },
+    {
+      "episode": 87,
+      "steps": 14847,
+      "episode_steps": 202,
+      "total_reward": 98.3,
+      "x_pos": 1125,
+      "flag_get": 0,
+      "mva": 60.8
+    },
+    {
+      "episode": 88,
+      "steps": 14908,
+      "episode_steps": 61,
+      "total_reward": 56.2,
+      "x_pos": 680,
+      "flag_get": 0,
+      "mva": 60.8
+    },
+    {
+      "episode": 89,
+      "steps": 15093,
+      "episode_steps": 185,
+      "total_reward": 66.8,
+      "x_pos": 807,
+      "flag_get": 0,
+      "mva": 57.7
+    },
+    {
+      "episode": 90,
+      "steps": 15123,
+      "episode_steps": 30,
+      "total_reward": 19.3,
+      "x_pos": 307,
+      "flag_get": 0,
+      "mva": 57.8
+    },
+    {
+      "episode": 91,
+      "steps": 15154,
+      "episode_steps": 31,
+      "total_reward": 20.2,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 57.8
+    },
+    {
+      "episode": 92,
+      "steps": 15188,
+      "episode_steps": 34,
+      "total_reward": 18.8,
+      "x_pos": 301,
+      "flag_get": 0,
+      "mva": 55.7
+    },
+    {
+      "episode": 93,
+      "steps": 15272,
+      "episode_steps": 84,
+      "total_reward": 57.4,
+      "x_pos": 695,
+      "flag_get": 0,
+      "mva": 52.2
+    },
+    {
+      "episode": 94,
+      "steps": 15360,
+      "episode_steps": 88,
+      "total_reward": 56.7,
+      "x_pos": 689,
+      "flag_get": 0,
+      "mva": 51.4
+    },
+    {
+      "episode": 95,
+      "steps": 15393,
+      "episode_steps": 33,
+      "total_reward": 19.0,
+      "x_pos": 304,
+      "flag_get": 0,
+      "mva": 51.4
+    },
+    {
+      "episode": 96,
+      "steps": 15689,
+      "episode_steps": 296,
+      "total_reward": 96.9,
+      "x_pos": 1129,
+      "flag_get": 0,
+      "mva": 49.9
+    },
+    {
+      "episode": 97,
+      "steps": 15791,
+      "episode_steps": 102,
+      "total_reward": 57.5,
+      "x_pos": 699,
+      "flag_get": 0,
+      "mva": 46.3
+    },
+    {
+      "episode": 98,
+      "steps": 15969,
+      "episode_steps": 178,
+      "total_reward": 99.1,
+      "x_pos": 1126,
+      "flag_get": 0,
+      "mva": 50.2
+    },
+    {
+      "episode": 99,
+      "steps": 16059,
+      "episode_steps": 90,
+      "total_reward": 56.7,
+      "x_pos": 691,
+      "flag_get": 0,
+      "mva": 52.1
+    },
+    {
+      "episode": 100,
+      "steps": 16359,
+      "episode_steps": 300,
+      "total_reward": 182.4,
+      "x_pos": 1960,
+      "flag_get": 0,
+      "mva": 60.2
+    },
+    {
+      "episode": 101,
+      "steps": 16512,
+      "episode_steps": 153,
+      "total_reward": 58.7,
+      "x_pos": 722,
+      "flag_get": 0,
+      "mva": 62.1
+    },
+    {
+      "episode": 102,
+      "steps": 16691,
+      "episode_steps": 179,
+      "total_reward": 68.8,
+      "x_pos": 825,
+      "flag_get": 0,
+      "mva": 62.8
+    },
+    {
+      "episode": 103,
+      "steps": 16767,
+      "episode_steps": 76,
+      "total_reward": 55.7,
+      "x_pos": 680,
+      "flag_get": 0,
+      "mva": 59.1
+    },
+    {
+      "episode": 104,
+      "steps": 16972,
+      "episode_steps": 205,
+      "total_reward": 69.7,
+      "x_pos": 833,
+      "flag_get": 0,
+      "mva": 61.7
+    },
+    {
+      "episode": 105,
+      "steps": 17149,
+      "episode_steps": 177,
+      "total_reward": 101.6,
+      "x_pos": 1151,
+      "flag_get": 0,
+      "mva": 65.8
+    },
+    {
+      "episode": 106,
+      "steps": 17246,
+      "episode_steps": 97,
+      "total_reward": 55.2,
+      "x_pos": 678,
+      "flag_get": 0,
+      "mva": 65.7
+    },
+    {
+      "episode": 107,
+      "steps": 17277,
+      "episode_steps": 31,
+      "total_reward": 19.4,
+      "x_pos": 307,
+      "flag_get": 0,
+      "mva": 61.8
+    },
+    {
+      "episode": 108,
+      "steps": 17382,
+      "episode_steps": 105,
+      "total_reward": 55.1,
+      "x_pos": 679,
+      "flag_get": 0,
+      "mva": 61.7
+    },
+    {
+      "episode": 109,
+      "steps": 17454,
+      "episode_steps": 72,
+      "total_reward": 55.9,
+      "x_pos": 681,
+      "flag_get": 0,
+      "mva": 61.2
+    },
+    {
+      "episode": 110,
+      "steps": 17488,
+      "episode_steps": 34,
+      "total_reward": 19.1,
+      "x_pos": 305,
+      "flag_get": 0,
+      "mva": 61.2
+    },
+    {
+      "episode": 111,
+      "steps": 17521,
+      "episode_steps": 33,
+      "total_reward": 19.6,
+      "x_pos": 310,
+      "flag_get": 0,
+      "mva": 61.2
+    },
+    {
+      "episode": 112,
+      "steps": 17555,
+      "episode_steps": 34,
+      "total_reward": 19.2,
+      "x_pos": 306,
+      "flag_get": 0,
+      "mva": 61.2
+    },
+    {
+      "episode": 113,
+      "steps": 17634,
+      "episode_steps": 79,
+      "total_reward": 58.0,
+      "x_pos": 703,
+      "flag_get": 0,
+      "mva": 61.2
+    },
+    {
+      "episode": 114,
+      "steps": 17797,
+      "episode_steps": 163,
+      "total_reward": 100.0,
+      "x_pos": 1130,
+      "flag_get": 0,
+      "mva": 63.4
+    },
+    {
+      "episode": 115,
+      "steps": 17875,
+      "episode_steps": 78,
+      "total_reward": 58.5,
+      "x_pos": 705,
+      "flag_get": 0,
+      "mva": 65.3
+    },
+    {
+      "episode": 116,
+      "steps": 17905,
+      "episode_steps": 30,
+      "total_reward": 20.0,
+      "x_pos": 314,
+      "flag_get": 0,
+      "mva": 61.5
+    },
+    {
+      "episode": 117,
+      "steps": 18078,
+      "episode_steps": 173,
+      "total_reward": 129.6,
+      "x_pos": 1435,
+      "flag_get": 0,
+      "mva": 65.1
+    },
+    {
+      "episode": 118,
+      "steps": 18233,
+      "episode_steps": 155,
+      "total_reward": 99.6,
+      "x_pos": 1129,
+      "flag_get": 0,
+      "mva": 65.1
+    },
+    {
+      "episode": 119,
+      "steps": 18317,
+      "episode_steps": 84,
+      "total_reward": 57.6,
+      "x_pos": 697,
+      "flag_get": 0,
+      "mva": 65.2
+    },
+    {
+      "episode": 120,
+      "steps": 18347,
+      "episode_steps": 30,
+      "total_reward": 19.7,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 57.0
+    },
+    {
+      "episode": 121,
+      "steps": 18418,
+      "episode_steps": 71,
+      "total_reward": 60.6,
+      "x_pos": 722,
+      "flag_get": 0,
+      "mva": 57.1
+    },
+    {
+      "episode": 122,
+      "steps": 18447,
+      "episode_steps": 29,
+      "total_reward": 19.8,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 54.7
+    },
+    {
+      "episode": 123,
+      "steps": 18966,
+      "episode_steps": 519,
+      "total_reward": 309.3,
+      "x_pos": 3161,
+      "flag_get": 1,
+      "mva": 67.4
+    },
+    {
+      "episode": 124,
+      "steps": 19071,
+      "episode_steps": 105,
+      "total_reward": 57.2,
+      "x_pos": 699,
+      "flag_get": 0,
+      "mva": 66.7
+    },
+    {
+      "episode": 125,
+      "steps": 19299,
+      "episode_steps": 228,
+      "total_reward": 75.0,
+      "x_pos": 897,
+      "flag_get": 0,
+      "mva": 65.4
+    },
+    {
+      "episode": 126,
+      "steps": 19565,
+      "episode_steps": 266,
+      "total_reward": 66.7,
+      "x_pos": 825,
+      "flag_get": 0,
+      "mva": 66.0
+    },
+    {
+      "episode": 127,
+      "steps": 19701,
+      "episode_steps": 136,
+      "total_reward": 56.6,
+      "x_pos": 700,
+      "flag_get": 0,
+      "mva": 67.8
+    },
+    {
+      "episode": 128,
+      "steps": 19762,
+      "episode_steps": 61,
+      "total_reward": 56.2,
+      "x_pos": 679,
+      "flag_get": 0,
+      "mva": 67.9
+    },
+    {
+      "episode": 129,
+      "steps": 19796,
+      "episode_steps": 34,
+      "total_reward": 19.7,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 66.1
+    },
+    {
+      "episode": 130,
+      "steps": 20150,
+      "episode_steps": 354,
+      "total_reward": 230.4,
+      "x_pos": 2470,
+      "flag_get": 0,
+      "mva": 76.6
+    },
+    {
+      "episode": 131,
+      "steps": 20225,
+      "episode_steps": 75,
+      "total_reward": 59.0,
+      "x_pos": 710,
+      "flag_get": 0,
+      "mva": 78.6
+    },
+    {
+      "episode": 132,
+      "steps": 20415,
+      "episode_steps": 190,
+      "total_reward": 128.6,
+      "x_pos": 1428,
+      "flag_get": 0,
+      "mva": 84.1
+    },
+    {
+      "episode": 133,
+      "steps": 20513,
+      "episode_steps": 98,
+      "total_reward": 56.3,
+      "x_pos": 690,
+      "flag_get": 0,
+      "mva": 84.0
+    },
+    {
+      "episode": 134,
+      "steps": 20580,
+      "episode_steps": 67,
+      "total_reward": 56.2,
+      "x_pos": 680,
+      "flag_get": 0,
+      "mva": 81.8
+    },
+    {
+      "episode": 135,
+      "steps": 20667,
+      "episode_steps": 87,
+      "total_reward": 58.2,
+      "x_pos": 707,
+      "flag_get": 0,
+      "mva": 81.8
+    },
+    {
+      "episode": 136,
+      "steps": 20938,
+      "episode_steps": 271,
+      "total_reward": 100.1,
+      "x_pos": 1150,
+      "flag_get": 0,
+      "mva": 85.8
+    },
+    {
+      "episode": 137,
+      "steps": 20974,
+      "episode_steps": 36,
+      "total_reward": 18.5,
+      "x_pos": 299,
+      "flag_get": 0,
+      "mva": 80.2
+    },
+    {
+      "episode": 138,
+      "steps": 21119,
+      "episode_steps": 145,
+      "total_reward": 77.2,
+      "x_pos": 898,
+      "flag_get": 0,
+      "mva": 79.1
+    },
+    {
+      "episode": 139,
+      "steps": 21232,
+      "episode_steps": 113,
+      "total_reward": 57.0,
+      "x_pos": 699,
+      "flag_get": 0,
+      "mva": 79.1
+    },
+    {
+      "episode": 140,
+      "steps": 21267,
+      "episode_steps": 35,
+      "total_reward": 19.3,
+      "x_pos": 308,
+      "flag_get": 0,
+      "mva": 79.1
+    },
+    {
+      "episode": 141,
+      "steps": 21354,
+      "episode_steps": 87,
+      "total_reward": 57.9,
+      "x_pos": 701,
+      "flag_get": 0,
+      "mva": 78.9
+    },
+    {
+      "episode": 142,
+      "steps": 21524,
+      "episode_steps": 170,
+      "total_reward": 100.3,
+      "x_pos": 1138,
+      "flag_get": 0,
+      "mva": 83.0
+    },
+    {
+      "episode": 143,
+      "steps": 21668,
+      "episode_steps": 144,
+      "total_reward": 59.2,
+      "x_pos": 722,
+      "flag_get": 0,
+      "mva": 70.5
+    },
+    {
+      "episode": 144,
+      "steps": 21849,
+      "episode_steps": 181,
+      "total_reward": 68.9,
+      "x_pos": 828,
+      "flag_get": 0,
+      "mva": 71.0
+    },
+    {
+      "episode": 145,
+      "steps": 21884,
+      "episode_steps": 35,
+      "total_reward": 19.3,
+      "x_pos": 307,
+      "flag_get": 0,
+      "mva": 68.3
+    },
+    {
+      "episode": 146,
+      "steps": 21914,
+      "episode_steps": 30,
+      "total_reward": 19.7,
+      "x_pos": 310,
+      "flag_get": 0,
+      "mva": 65.9
+    },
+    {
+      "episode": 147,
+      "steps": 21944,
+      "episode_steps": 30,
+      "total_reward": 20.0,
+      "x_pos": 314,
+      "flag_get": 0,
+      "mva": 64.1
+    },
+    {
+      "episode": 148,
+      "steps": 21974,
+      "episode_steps": 30,
+      "total_reward": 20.2,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 62.3
+    },
+    {
+      "episode": 149,
+      "steps": 22139,
+      "episode_steps": 165,
+      "total_reward": 99.6,
+      "x_pos": 1131,
+      "flag_get": 0,
+      "mva": 66.3
+    },
+    {
+      "episode": 150,
+      "steps": 22347,
+      "episode_steps": 208,
+      "total_reward": 138.0,
+      "x_pos": 1527,
+      "flag_get": 0,
+      "mva": 61.7
+    },
+    {
+      "episode": 151,
+      "steps": 22618,
+      "episode_steps": 271,
+      "total_reward": 97.5,
+      "x_pos": 1127,
+      "flag_get": 0,
+      "mva": 63.6
+    },
+    {
+      "episode": 152,
+      "steps": 22648,
+      "episode_steps": 30,
+      "total_reward": 20.1,
+      "x_pos": 314,
+      "flag_get": 0,
+      "mva": 58.2
+    },
+    {
+      "episode": 153,
+      "steps": 22678,
+      "episode_steps": 30,
+      "total_reward": 19.8,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 56.3
+    },
+    {
+      "episode": 154,
+      "steps": 22713,
+      "episode_steps": 35,
+      "total_reward": 19.8,
+      "x_pos": 313,
+      "flag_get": 0,
+      "mva": 54.5
+    },
+    {
+      "episode": 155,
+      "steps": 22975,
+      "episode_steps": 262,
+      "total_reward": 136.8,
+      "x_pos": 1523,
+      "flag_get": 0,
+      "mva": 58.4
+    },
+    {
+      "episode": 156,
+      "steps": 23255,
+      "episode_steps": 280,
+      "total_reward": 165.0,
+      "x_pos": 1801,
+      "flag_get": 0,
+      "mva": 61.7
+    },
+    {
+      "episode": 157,
+      "steps": 23443,
+      "episode_steps": 188,
+      "total_reward": 68.5,
+      "x_pos": 822,
+      "flag_get": 0,
+      "mva": 64.2
+    },
+    {
+      "episode": 158,
+      "steps": 23531,
+      "episode_steps": 88,
+      "total_reward": 58.8,
+      "x_pos": 707,
+      "flag_get": 0,
+      "mva": 63.3
+    },
+    {
+      "episode": 159,
+      "steps": 23600,
+      "episode_steps": 69,
+      "total_reward": 56.6,
+      "x_pos": 684,
+      "flag_get": 0,
+      "mva": 63.3
+    },
+    {
+      "episode": 160,
+      "steps": 23692,
+      "episode_steps": 92,
+      "total_reward": 58.8,
+      "x_pos": 709,
+      "flag_get": 0,
+      "mva": 65.2
+    },
+    {
+      "episode": 161,
+      "steps": 23722,
+      "episode_steps": 30,
+      "total_reward": 19.9,
+      "x_pos": 313,
+      "flag_get": 0,
+      "mva": 63.3
+    },
+    {
+      "episode": 162,
+      "steps": 23893,
+      "episode_steps": 171,
+      "total_reward": 155.0,
+      "x_pos": 1675,
+      "flag_get": 0,
+      "mva": 66.1
+    },
+    {
+      "episode": 163,
+      "steps": 23927,
+      "episode_steps": 34,
+      "total_reward": 19.6,
+      "x_pos": 310,
+      "flag_get": 0,
+      "mva": 64.1
+    },
+    {
+      "episode": 164,
+      "steps": 23964,
+      "episode_steps": 37,
+      "total_reward": 18.6,
+      "x_pos": 299,
+      "flag_get": 0,
+      "mva": 61.6
+    },
+    {
+      "episode": 165,
+      "steps": 24000,
+      "episode_steps": 36,
+      "total_reward": 20.3,
+      "x_pos": 313,
+      "flag_get": 0,
+      "mva": 61.6
+    },
+    {
+      "episode": 166,
+      "steps": 24083,
+      "episode_steps": 83,
+      "total_reward": 58.1,
+      "x_pos": 705,
+      "flag_get": 0,
+      "mva": 63.5
+    },
+    {
+      "episode": 167,
+      "steps": 24222,
+      "episode_steps": 139,
+      "total_reward": 102.2,
+      "x_pos": 1152,
+      "flag_get": 0,
+      "mva": 67.7
+    },
+    {
+      "episode": 168,
+      "steps": 24253,
+      "episode_steps": 31,
+      "total_reward": 19.8,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 67.6
+    },
+    {
+      "episode": 169,
+      "steps": 24475,
+      "episode_steps": 222,
+      "total_reward": 99.7,
+      "x_pos": 1127,
+      "flag_get": 0,
+      "mva": 67.6
+    },
+    {
+      "episode": 170,
+      "steps": 24593,
+      "episode_steps": 118,
+      "total_reward": 55.6,
+      "x_pos": 684,
+      "flag_get": 0,
+      "mva": 63.5
+    },
+    {
+      "episode": 171,
+      "steps": 24626,
+      "episode_steps": 33,
+      "total_reward": 19.1,
+      "x_pos": 304,
+      "flag_get": 0,
+      "mva": 59.6
+    },
+    {
+      "episode": 172,
+      "steps": 24657,
+      "episode_steps": 31,
+      "total_reward": 20.0,
+      "x_pos": 314,
+      "flag_get": 0,
+      "mva": 59.6
+    },
+    {
+      "episode": 173,
+      "steps": 24992,
+      "episode_steps": 335,
+      "total_reward": 164.4,
+      "x_pos": 1790,
+      "flag_get": 0,
+      "mva": 66.8
+    },
+    {
+      "episode": 174,
+      "steps": 25030,
+      "episode_steps": 38,
+      "total_reward": 17.8,
+      "x_pos": 287,
+      "flag_get": 0,
+      "mva": 66.7
+    },
+    {
+      "episode": 175,
+      "steps": 25062,
+      "episode_steps": 32,
+      "total_reward": 20.2,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 60.9
+    },
+    {
+      "episode": 176,
+      "steps": 25095,
+      "episode_steps": 33,
+      "total_reward": 19.8,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 53.6
+    },
+    {
+      "episode": 177,
+      "steps": 25293,
+      "episode_steps": 198,
+      "total_reward": 99.4,
+      "x_pos": 1137,
+      "flag_get": 0,
+      "mva": 55.2
+    },
+    {
+      "episode": 178,
+      "steps": 25430,
+      "episode_steps": 137,
+      "total_reward": 100.9,
+      "x_pos": 1138,
+      "flag_get": 0,
+      "mva": 57.3
+    },
+    {
+      "episode": 179,
+      "steps": 25691,
+      "episode_steps": 261,
+      "total_reward": 125.8,
+      "x_pos": 1412,
+      "flag_get": 0,
+      "mva": 60.7
+    },
+    {
+      "episode": 180,
+      "steps": 25796,
+      "episode_steps": 105,
+      "total_reward": 57.0,
+      "x_pos": 698,
+      "flag_get": 0,
+      "mva": 60.7
+    },
+    {
+      "episode": 181,
+      "steps": 25900,
+      "episode_steps": 104,
+      "total_reward": 56.3,
+      "x_pos": 690,
+      "flag_get": 0,
+      "mva": 62.5
+    },
+    {
+      "episode": 182,
+      "steps": 26127,
+      "episode_steps": 227,
+      "total_reward": 129.1,
+      "x_pos": 1434,
+      "flag_get": 0,
+      "mva": 61.2
+    },
+    {
+      "episode": 183,
+      "steps": 26164,
+      "episode_steps": 37,
+      "total_reward": 18.2,
+      "x_pos": 296,
+      "flag_get": 0,
+      "mva": 61.1
+    },
+    {
+      "episode": 184,
+      "steps": 26381,
+      "episode_steps": 217,
+      "total_reward": 129.0,
+      "x_pos": 1433,
+      "flag_get": 0,
+      "mva": 66.6
+    },
+    {
+      "episode": 185,
+      "steps": 26418,
+      "episode_steps": 37,
+      "total_reward": 18.9,
+      "x_pos": 303,
+      "flag_get": 0,
+      "mva": 66.6
+    },
+    {
+      "episode": 186,
+      "steps": 26550,
+      "episode_steps": 132,
+      "total_reward": 130.5,
+      "x_pos": 1434,
+      "flag_get": 0,
+      "mva": 70.2
+    },
+    {
+      "episode": 187,
+      "steps": 26709,
+      "episode_steps": 159,
+      "total_reward": 67.8,
+      "x_pos": 813,
+      "flag_get": 0,
+      "mva": 68.5
+    },
+    {
+      "episode": 188,
+      "steps": 26744,
+      "episode_steps": 35,
+      "total_reward": 19.6,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 68.4
+    },
+    {
+      "episode": 189,
+      "steps": 26929,
+      "episode_steps": 185,
+      "total_reward": 99.4,
+      "x_pos": 1128,
+      "flag_get": 0,
+      "mva": 68.4
+    },
+    {
+      "episode": 190,
+      "steps": 27099,
+      "episode_steps": 170,
+      "total_reward": 99.0,
+      "x_pos": 1122,
+      "flag_get": 0,
+      "mva": 70.6
+    },
+    {
+      "episode": 191,
+      "steps": 27131,
+      "episode_steps": 32,
+      "total_reward": 19.4,
+      "x_pos": 303,
+      "flag_get": 0,
+      "mva": 70.6
+    },
+    {
+      "episode": 192,
+      "steps": 27383,
+      "episode_steps": 252,
+      "total_reward": 181.2,
+      "x_pos": 1968,
+      "flag_get": 0,
+      "mva": 78.7
+    },
+    {
+      "episode": 193,
+      "steps": 27538,
+      "episode_steps": 155,
+      "total_reward": 128.2,
+      "x_pos": 1416,
+      "flag_get": 0,
+      "mva": 76.9
+    },
+    {
+      "episode": 194,
+      "steps": 27568,
+      "episode_steps": 30,
+      "total_reward": 19.8,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 77.0
+    },
+    {
+      "episode": 195,
+      "steps": 27596,
+      "episode_steps": 28,
+      "total_reward": 19.9,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 76.9
+    },
+    {
+      "episode": 196,
+      "steps": 27659,
+      "episode_steps": 63,
+      "total_reward": 55.8,
+      "x_pos": 678,
+      "flag_get": 0,
+      "mva": 78.7
+    },
+    {
+      "episode": 197,
+      "steps": 27690,
+      "episode_steps": 31,
+      "total_reward": 20.1,
+      "x_pos": 310,
+      "flag_get": 0,
+      "mva": 74.8
+    },
+    {
+      "episode": 198,
+      "steps": 27783,
+      "episode_steps": 93,
+      "total_reward": 57.6,
+      "x_pos": 698,
+      "flag_get": 0,
+      "mva": 72.6
+    },
+    {
+      "episode": 199,
+      "steps": 27928,
+      "episode_steps": 145,
+      "total_reward": 99.5,
+      "x_pos": 1129,
+      "flag_get": 0,
+      "mva": 71.3
+    },
+    {
+      "episode": 200,
+      "steps": 28025,
+      "episode_steps": 97,
+      "total_reward": 56.7,
+      "x_pos": 691,
+      "flag_get": 0,
+      "mva": 71.3
+    },
+    {
+      "episode": 201,
+      "steps": 28209,
+      "episode_steps": 184,
+      "total_reward": 154.2,
+      "x_pos": 1673,
+      "flag_get": 0,
+      "mva": 76.2
+    },
+    {
+      "episode": 202,
+      "steps": 28239,
+      "episode_steps": 30,
+      "total_reward": 19.7,
+      "x_pos": 311,
+      "flag_get": 0,
+      "mva": 70.7
+    },
+    {
+      "episode": 203,
+      "steps": 28318,
+      "episode_steps": 79,
+      "total_reward": 57.7,
+      "x_pos": 697,
+      "flag_get": 0,
+      "mva": 72.7
+    },
+    {
+      "episode": 204,
+      "steps": 28351,
+      "episode_steps": 33,
+      "total_reward": 19.9,
+      "x_pos": 308,
+      "flag_get": 0,
+      "mva": 67.2
+    },
+    {
+      "episode": 205,
+      "steps": 28414,
+      "episode_steps": 63,
+      "total_reward": 55.9,
+      "x_pos": 679,
+      "flag_get": 0,
+      "mva": 69.1
+    },
+    {
+      "episode": 206,
+      "steps": 28508,
+      "episode_steps": 94,
+      "total_reward": 56.8,
+      "x_pos": 693,
+      "flag_get": 0,
+      "mva": 65.4
+    },
+    {
+      "episode": 207,
+      "steps": 28655,
+      "episode_steps": 147,
+      "total_reward": 111.1,
+      "x_pos": 1248,
+      "flag_get": 0,
+      "mva": 67.6
+    },
+    {
+      "episode": 208,
+      "steps": 28896,
+      "episode_steps": 241,
+      "total_reward": 164.7,
+      "x_pos": 1798,
+      "flag_get": 0,
+      "mva": 74.8
+    },
+    {
+      "episode": 209,
+      "steps": 29054,
+      "episode_steps": 158,
+      "total_reward": 138.0,
+      "x_pos": 1516,
+      "flag_get": 0,
+      "mva": 76.8
+    },
+    {
+      "episode": 210,
+      "steps": 29208,
+      "episode_steps": 154,
+      "total_reward": 59.0,
+      "x_pos": 722,
+      "flag_get": 0,
+      "mva": 74.8
+    },
+    {
+      "episode": 211,
+      "steps": 29404,
+      "episode_steps": 196,
+      "total_reward": 167.9,
+      "x_pos": 1816,
+      "flag_get": 0,
+      "mva": 82.2
+    },
+    {
+      "episode": 212,
+      "steps": 29432,
+      "episode_steps": 28,
+      "total_reward": 19.9,
+      "x_pos": 312,
+      "flag_get": 0,
+      "mva": 74.1
+    },
+    {
+      "episode": 213,
+      "steps": 29635,
+      "episode_steps": 203,
+      "total_reward": 129.4,
+      "x_pos": 1434,
+      "flag_get": 0,
+      "mva": 74.2
+    },
+    {
+      "episode": 214,
+      "steps": 29717,
+      "episode_steps": 82,
+      "total_reward": 58.9,
+      "x_pos": 710,
+      "flag_get": 0,
+      "mva": 76.1
+    },
+    {
+      "episode": 215,
+      "steps": 29755,
+      "episode_steps": 38,
+      "total_reward": 17.9,
+      "x_pos": 288,
+      "flag_get": 0,
+      "mva": 76.0
+    },
+    {
+      "episode": 216,
+      "steps": 29839,
+      "episode_steps": 84,
+      "total_reward": 56.1,
+      "x_pos": 680,
+      "flag_get": 0,
+      "mva": 76.0
+    },
+    {
+      "episode": 217,
+      "steps": 29965,
+      "episode_steps": 126,
+      "total_reward": 77.6,
+      "x_pos": 898,
+      "flag_get": 0,
+      "mva": 78.9
+    },
+    {
+      "episode": 218,
+      "steps": 29997,
+      "episode_steps": 32,
+      "total_reward": 20.0,
+      "x_pos": 308,
+      "flag_get": 0,
+      "mva": 77.0
+    },
+    {
+      "episode": 219,
+      "steps": 30089,
+      "episode_steps": 92,
+      "total_reward": 56.3,
+      "x_pos": 684,
+      "flag_get": 0,
+      "mva": 74.9
+    }
+  ],
+  "evaluation": [
+    {
+      "avg_reward": -46.5,
+      "avg_x_pos": 40.0,
+      "max_x_pos": 40,
+      "completion_rate": 0.0,
+      "completions": 0,
+      "num_episodes": 5,
+      "avg_time_to_flag": null,
+      "episode": 53,
+      "global_step": 10240
+    },
+    {
+      "avg_reward": 20.0,
+      "avg_x_pos": 314.0,
+      "max_x_pos": 314,
+      "completion_rate": 0.0,
+      "completions": 0,
+      "num_episodes": 5,
+      "avg_time_to_flag": null,
+      "episode": 132,
+      "global_step": 20480
+    },
+    {
+      "avg_reward": 20.0,
+      "avg_x_pos": 314.0,
+      "max_x_pos": 314,
+      "completion_rate": 0.0,
+      "completions": 0,
+      "num_episodes": 5,
+      "avg_time_to_flag": null,
+      "episode": 219,
+      "global_step": 30208
+    }
+  ],
+  "summary": {
+    "total_steps": 30208,
+    "total_episodes": 219,
+    "best_eval_cr": 0.0,
+    "time_seconds": 477.7
+  }
+}

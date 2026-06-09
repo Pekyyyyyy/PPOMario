@@ -8,7 +8,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # Install dependencies (Python 3.9–3.11)
 pip install -r requirements.txt
 
-# Train with defaults (DDQN, gamma=0.95, replay=100K, 1000 episodes)
+# === DDQN ===
+# Train with defaults (gamma=0.95, replay=100K, 1000 episodes)
 python train.py
 
 # Train with custom hyperparameters (all overridable from CLI)
@@ -16,14 +17,36 @@ python train.py --episodes 500 --action-set complex --device cuda
 python train.py --lr 5e-5 --gamma 0.99 --replay-size 200000 --batch-size 64
 
 # Resume from a checkpoint
-python train.py --checkpoint weights/checkpoint_662.pth
+python train.py --checkpoint weights/ddqn/checkpoint_662.pth
 
 # Full CLI reference
 python train.py --help
 
-# Smoke-test the wrapped environment (no training)
-python env_test.py --steps 200
-python env_test.py --steps 200 --render
+# === PPO ===
+# Train with defaults (world 1-1, simple actions)
+python train_ppo.py
+
+# Train specific level
+python train_ppo.py --world 1 --stage 2 --lr 1e-4 --device cuda
+
+# === A3C+LSTM (cross-level generalization) ===
+# Download pretrained weights, convert to .pth, export ONNX
+python scripts/convert_a3c.py
+
+# Evaluate on levels 1-1 through 1-4
+python scripts/eval_a3c.py
+
+# Evaluate with rendering
+python scripts/eval_a3c.py --levels 1-1 --render
+
+# Multi-level visual demo (default 1-1 through 1-4)
+python demo.py
+
+# Demo specific levels
+python demo.py --levels 1-1 1-2
+
+# Demo with slow motion
+python demo.py --slow
 ```
 
 There is no test suite or linter configured. `env_test.py` is the only automated check — it runs random actions through the wrapped environment to confirm the Gym pipeline works.
@@ -95,49 +118,99 @@ These patches have already been applied on the server as of 2026-05-31.
 
 ## Architecture
 
-This is a **Double DQN** (DDQN) agent for `gym-super-mario-bros`. The codebase was refactored from a single-file script into modules by responsibility.
+This codebase implements **three RL algorithms** for `gym-super-mario-bros`, organized by model type under `mario_rl/`.
 
-### Data flow (training loop)
+### Directory layout
+
+```
+mario_rl/
+├── __init__.py          # Top-level API exports
+├── actions.py           # Shared action set mappings
+├── utils.py             # Shared: device, seed, Gym API compat
+├── metrics.py           # Shared: training metrics logging
+├── ddqn/                # Double DQN
+│   ├── agent.py         #   MarioAgent: ε-greedy + deque replay
+│   ├── model.py         #   DoubleDQNNetwork: online/target conv nets
+│   ├── config.py        #   EnvConfig / AgentConfig / TrainingConfig
+│   ├── env.py           #   build_env(): SkipFrame + GrayScale + Resize + FrameStack
+│   └── trainer.py       #   Trainer: episode loop + checkpoint
+├── ppo/                 # PPO (Proximal Policy Optimization)
+│   ├── model.py         #   PPONetwork: 4-conv Actor-Critic
+│   ├── env.py           #   build_ppo_env(): CustomReward + CustomSkipFrame
+│   └── trainer.py       #   PPOAgent + train_ppo(): GAE + Clipped Surrogate
+└── a3c/                 # A3C+LSTM (MarioNET, cross-level generalization)
+    ├── model.py         #   MarioNET: ResBlock + LSTMCell + Actor/Critic
+    └── env.py           #   build_a3c_env(): 80×80 crop + RunningMeanStd norm
+```
+
+### Data flow (DDQN training loop)
 
 ```
 train.py                    — CLI → assemble configs, env, agent, trainer
-  └─ mario_rl/config.py    — EnvConfig / AgentConfig / TrainingConfig dataclasses
-  └─ mario_rl/env.py       — build_env() wraps gym-super-mario-bros through a stack:
-       JoypadSpace → SkipFrame(4) → GrayScaleObservation → ResizeObservation(84×84) → FrameStack(4)
-  └─ mario_rl/agent.py     — MarioAgent: ε-greedy act(), remember() to deque replay buffer, learn() via DDQN
-  └─ mario_rl/model.py     — DoubleDQNNetwork: identical online/target conv nets (3 conv → flatten → 2 FC)
-  └─ mario_rl/trainer.py   — Episode loop: run_episode() then checkpoint on best moving-average reward
-  └─ mario_rl/utils.py     — resolve_device(), seed_everything(), + compat wrappers for Gym 0.21 vs 0.26 step/reset APIs
+  └─ mario_rl/ddqn/config.py   — EnvConfig / AgentConfig / TrainingConfig dataclasses
+  └─ mario_rl/ddqn/env.py      — build_env() wraps gym-super-mario-bros through a stack:
+       JoypadSpace → StepCompatWrapper → SkipFrame(4) → GrayScaleObservation → ResizeObservation(84×84) → FrameStack(4)
+  └─ mario_rl/ddqn/agent.py    — MarioAgent: ε-greedy act(), remember() to deque replay buffer, learn() via DDQN
+  └─ mario_rl/ddqn/model.py    — DoubleDQNNetwork: identical online/target conv nets (3 conv → flatten → 2 FC)
+  └─ mario_rl/ddqn/trainer.py  — Episode loop: run_episode() then checkpoint on best moving-average reward
+```
+
+### Data flow (PPO training loop)
+
+```
+train_ppo.py                     — CLI → build env, agent, launch train_ppo()
+  └─ mario_rl/ppo/env.py        — build_ppo_env(): JoypadSpace → CustomReward → CustomSkipFrame(4)
+  └─ mario_rl/ppo/model.py      — PPONetwork: 4×Conv2d(3×3,stride2) → FC(1152→512) → Actor/Critic heads
+  └─ mario_rl/ppo/trainer.py    — PPOAgent: GAE + Clipped Surrogate + Entropy bonus; train_ppo(): single-env loop
+```
+
+### Data flow (A3C+LSTM evaluation)
+
+```
+scripts/eval_a3c.py              — Load MarioNET, evaluate across levels
+  └─ mario_rl/a3c/model.py      — MarioNET: 3×ResBlock → FC(3200→512) → LSTMCell(512→512) → Actor(10)/Critic(1)
+  └─ mario_rl/a3c/env.py        — build_a3c_env(): JoypadSpace → A3CSkipFrame(4) → A3CFrameStack(4) → A3CNormalize
 ```
 
 ### Key design decisions
 
-- **Double DQN**: The online network selects the best action for the next state; the target network evaluates it. This decouples action selection from value estimation to reduce overestimation bias.
-- **Target network sync**: Every `sync_steps` (default 10) learning steps, the target network's weights are copied from the online network (hard update, no Polyak averaging).
-- **Exploration decay**: ε is multiplied by `exploration_rate_decay` (0.999995) **per action**, not per episode. This is a very slow exponential decay.
-- **Gamma**: Default 0.95 (increased from original 0.78) — high enough for the agent to receive meaningful reward signal from the flag pole 300-500 steps away.
-- **Replay memory**: A plain `collections.deque` with `maxlen=100,000` (increased from 10K). Not prioritized, no n-step returns.
-- **Checkpoint format**: A dict `{"model": <state_dict>, "exploration_rate": <float>}` saved as `.pth`. Loading restores both the network weights and the current exploration rate.
-- **Dynamic conv dimension**: The flattened feature size after conv layers is computed from the input shape, not hardcoded. Changing `resize_shape` or `stack_frames` now works without manual dimension updates.
-- **Gym API compat**: `step_env()` and `reset_env()` in `utils.py` handle both the old 4-tuple `(obs, reward, done, info)` and new 5-tuple `(obs, reward, terminated, truncated, info)` return formats.
+**DDQN:**
+- Online network selects best action; target network evaluates it — decouples selection from estimation
+- Target sync: hard copy every `sync_steps` (10) steps (no Polyak by default)
+- ε decay: multiplied by 0.999995 per action (very slow exponential)
+- Replay: plain `deque(maxlen=100,000)`, no prioritization, no n-step returns
+- Checkpoint: `{"model": <state_dict>, "exploration_rate": <float>}`
+
+**PPO:**
+- Single-process implementation (not multi-process like uvipen/vietnh1009)
+- Actor-Critic with shared CNN backbone
+- GAE advantage estimation (γ=0.9, τ=1.0)
+- Clipped surrogate objective (ε=0.2)
+- Critic loss weighted by 0.5
+
+**A3C+LSTM (MarioNET):**
+- LSTM hidden/cell states track temporal context — this is WHY it generalizes across levels
+- ResBlock residual connections for deeper gradient flow
+- RunningMeanStd normalization (obs_rms.pkl) — must match training exactly
+- 10-action CUSTOM_MOVEMENT space (vs 7 for DDQN/PPO simple set)
+
+**Shared:**
+- Gym API compat: `step_env()` / `reset_env()` handle both 4-tuple and 5-tuple
+- All checkpoints use `{"model": state_dict}` wrapper format
 
 ### Where to change specific things
 
 | Concern | File |
 |---|---|
-| DDQN hyperparameters (γ, η, batch size, ε decay, sync freq) | `mario_rl/config.py` → `AgentConfig` |
-| Training loop (episodes, checkpoint period, log window) | `mario_rl/config.py` → `TrainingConfig` |
-| Environment settings (env id, action set, frame skip, resolution) | `mario_rl/config.py` → `EnvConfig` |
-| Neural network architecture | `mario_rl/model.py` → `DoubleDQNNetwork` |
-| Exploration strategy or replay buffer | `mario_rl/agent.py` → `MarioAgent.act()` / `remember()` / `learn()` |
-| Frame preprocessing pipeline | `mario_rl/env.py` → `build_env()` + wrapper classes |
-| Checkpoint save/load logic | `mario_rl/agent.py` → `save_checkpoint()` / `load()` |
-| Action space definitions | `mario_rl/actions.py` |
-
-### Checkpoint model structure
-
-The network expects input shape `(batch, 4, 84, 84)` — 4 stacked grayscale frames resized to 84×84. The conv backbone produces a 3136-dim flattened feature vector before the FC head. If you change the input resolution or stack size, you must also update `resize_shape` / `stack_frames` in `EnvConfig` and the linear layer input dimension (3136) in `model.py`.
-
-### Saved weights
-
-`weights/checkpoint_662.pth` ships with the repo and is the known-good checkpoint referenced in the README. It is compatible with the current model structure.
+| DDQN hyperparameters (γ, η, batch size, ε decay, sync freq) | `mario_rl/ddqn/config.py` → `AgentConfig` |
+| DDQN training loop (episodes, checkpoint period, log window) | `mario_rl/ddqn/config.py` → `TrainingConfig` |
+| DDQN environment settings (env id, action set, frame skip, resolution) | `mario_rl/ddqn/config.py` → `EnvConfig` |
+| DDQN neural network architecture | `mario_rl/ddqn/model.py` → `DoubleDQNNetwork` |
+| DDQN exploration strategy or replay buffer | `mario_rl/ddqn/agent.py` → `act()` / `remember()` / `learn()` |
+| DDQN frame preprocessing pipeline | `mario_rl/ddqn/env.py` → `build_env()` + wrapper classes |
+| PPO network architecture | `mario_rl/ppo/model.py` → `PPONetwork` |
+| PPO training loop + GAE | `mario_rl/ppo/trainer.py` → `train_ppo()` / `PPOAgent.learn()` |
+| PPO environment + reward shaping | `mario_rl/ppo/env.py` → `CustomReward` / `build_ppo_env()` |
+| A3C+LSTM network | `mario_rl/a3c/model.py` → `MarioNET` / `ResBlock` |
+| A3C+LSTM environment preprocessing | `mario_rl/a3c/env.py` → `build_a3c_env()` / `process_frame_a3c()` |
+| Action space definitions | `mario_rl/actions.py` → `ACTION_SETS` |

@@ -1,10 +1,10 @@
 import argparse
 from pathlib import Path
 
-from mario_rl.agent import MarioAgent
-from mario_rl.config import AgentConfig, EnvConfig, TrainingConfig
-from mario_rl.env import build_env
-from mario_rl.trainer import Trainer
+from mario_rl.ddqn.agent import MarioAgent
+from mario_rl.ddqn.config import AgentConfig, EnvConfig, TrainingConfig
+from mario_rl.ddqn.env import build_env
+from mario_rl.ddqn.trainer import Trainer
 from mario_rl.utils import resolve_device
 
 
@@ -12,7 +12,7 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train a DDQN agent for Super Mario Bros.")
 
     # Environment
-    parser.add_argument("--env-id", default="SuperMarioBros-1-1-v0", help="Gym environment id.")
+    parser.add_argument("--env-id", default="SuperMarioBros-1-1-v3", help="Gym environment id.")
     parser.add_argument(
         "--action-set",
         default="simple",

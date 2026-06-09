@@ -18,9 +18,9 @@ import numpy as np
 # 本地路径
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from mario_rl.config import AgentConfig, EnvConfig
-from mario_rl.env import build_env
-from mario_rl.agent import MarioAgent
+from mario_rl.ddqn.config import AgentConfig, EnvConfig
+from mario_rl.ddqn.env import build_env
+from mario_rl.ddqn.agent import MarioAgent
 from mario_rl.utils import reset_env, step_env
 
 # 阶段门槛定义
