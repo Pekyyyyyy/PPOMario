@@ -147,8 +147,6 @@ python scripts/eval_checkpoint.py weights/ddqn/checkpoint_662.pth --episodes 10
 
 ## 远端训练 (Win-SCP)
 
-远端 GPU 服务器：`10.122.242.98:20002` (账户 `stu_519`)，2× RTX 2080 Ti。
-
 ```bash
 # 查看 GPU 状态
 python remote_train.py gpus
